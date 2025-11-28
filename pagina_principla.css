@@ -1,0 +1,79 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(to right, #1E2D2B, #1A6348, #1E2D2B, #1E2D2B, #1E2D2B, #1A6348, #1E2D2B, #1E2D2B, #1E2D2B, #1A6348);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 360px;    
+  margin-bottom: 30px;
+}
+main {
+  margin-top: 50px;
+}
+
+.container {
+  background: #ffffff22;
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+  /* Fondo dentro del recuadro */
+  background-image: url('Fondo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: #004080;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  background: #4ADDAA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1E2D2B;
+}
+
+#resultado {
+  margin-top: 25px;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 15px;
+  background: rgba(0,0,0,0.2);
+  font-size: 0.9em;
+}

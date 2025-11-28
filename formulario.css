@@ -13,28 +13,31 @@ a{
 input{
     width: 100%;
     height: 35px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-
+    transform: translateY(0.6rem);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    border: solid 1px #8d8d8d;
 }
 input::placeholder{
-    color: #ccc;
+    color: #777777;
 }
 body{
-    background-repeat: #f2f2f2;
+    background: linear-gradient(to right, #1E2D2B, #1A6348, #1E2D2B, #1E2D2B, #1E2D2B, #1A6348, #1E2D2B, #1E2D2B, #1E2D2B, #1A6348);
 }
 form{
-    background-repeat: #fff;
+    background-color: #000000;
     width: 600px;
     height: auto;
     padding: 20px;
     margin: 0 auto;
+    background-image: url('Fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 nav{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #000000;
 }
 .formulario-ul{
     display: flex;
@@ -42,7 +45,7 @@ nav{
     gap: 0 10px;
 }
 .li-formulario a{
-    color: #888;
+    color: #4ADDAA;
     font-weight: bold;
 }
 .li-formulario a:focus{
@@ -56,13 +59,17 @@ nav{
 .h2-resgistro{
     text-align: center;
     font-size: 28px;
-    color: #333;
+    color: #4ADDAA;
     margin-top: 20px;
+    position:absolute;
+}
+h2{
+    color: #4ADDAA;
 }
 label{
     display: block;
     margin-top: 10px;
-    color: #aaa;
+    color: #4ADDAA;
 }
 button{
     display: block;
@@ -77,6 +84,7 @@ button{
 }
 p{
     text-align: center;
+    color: #4ADDAA;
 }
 p a{
     color: #1e90ff;

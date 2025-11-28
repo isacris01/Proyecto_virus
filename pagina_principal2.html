@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lector de Antivirus</title>
+
+  <link rel="stylesheet" href="pagina_principla.css">
+</head>
+<body>
+  <header>
+    <img src="ROKO2.png.png" alt="Logo" class="logo"><br>
+    Lector Antivirus — Seguridad Digital
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Escanea tu archivo</h2>
+      <p>Selecciona un archivo para analizar su contenido y comprobar si es seguro.</p>
+      <input type="file" id="archivo">
+      <br>
+      <button onclick="analizarArchivo()">Analizar</button>
+      <div id="resultado"></div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Lector Antivirus 
+  </footer>
+
+  <script>
+    function analizarArchivo() {
+      const archivo = document.getElementById('archivo').files[0];
+      const resultado = document.getElementById('resultado');
+
+      if (!archivo) {
+        resultado.innerHTML = "No has seleccionado ningún archivo.";
+        resultado.style.color = "#4ADDAA";
+        return;
+      }
+
+      resultado.style.color = "white";
+      resultado.innerHTML = " Analizando archivo...";
+
+      const nombre = archivo.name.toLowerCase();
+
+      setTimeout(() => {
+        if (nombre.includes("virus") || nombre.includes("malware")) {
+          resultado.innerHTML = " El archivo contiene una amenaza detectada.";
+          resultado.style.color = "#ff6666";
+        } else {
+          resultado.innerHTML = " El archivo está limpio. No se detectaron amenazas.";
+          resultado.style.color = "#4ADDAA";
+        }
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
